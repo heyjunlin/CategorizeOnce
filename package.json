@@ -1,0 +1,41 @@
+{
+  "name": "categorize-once",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "generate-attributions": "node scripts/generate-attributions.js",
+    "add-license-headers": "node scripts/add-license-headers.js",
+    "prebuild": "npm run generate-attributions && npm run add-license-headers"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.7",
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/react-router": "^1.131.27",
+    "papaparse": "^5.5.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@tanstack/react-router-devtools": "^1.131.36",
+    "@tanstack/router-plugin": "^1.131.27",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "vite": "^7.1.0"
+  },
+  "license": "Apache-2.0"
+}

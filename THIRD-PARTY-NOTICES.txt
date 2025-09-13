@@ -1,0 +1,46 @@
+# Third-Party Software Attributions
+
+This project includes components from the following third-party software that
+are subject to separate license terms. Your use of these components is subject
+to the terms and conditions of their respective licenses.
+
+## @headlessui/react@2.2.7 - MIT License
+Copyright holder information not available
+
+Repository: https://github.com/tailwindlabs/headlessui
+
+## @heroicons/react@2.2.0 - MIT License
+Copyright holder information not available
+
+Repository: https://github.com/tailwindlabs/heroicons
+
+## @tailwindcss/vite@4.1.11 - MIT License
+Copyright holder information not available
+
+Repository: https://github.com/tailwindlabs/tailwindcss
+
+## @tanstack/react-router@1.131.36 - MIT License
+Copyright (c) Tanner Linsley
+
+Repository: https://github.com/TanStack/router
+
+## papaparse@5.5.3 - MIT License
+Copyright (c) Matthew Holt
+
+Repository: https://github.com/mholt/PapaParse
+
+## react@19.1.1 - MIT License
+Copyright holder information not available
+
+Repository: https://github.com/facebook/react
+
+## react-dom@19.1.1 - MIT License
+Copyright holder information not available
+
+Repository: https://github.com/facebook/react
+
+## tailwindcss@4.1.11 - MIT License
+Copyright holder information not available
+
+Repository: https://github.com/tailwindlabs/tailwindcss
+
