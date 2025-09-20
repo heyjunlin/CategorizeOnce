@@ -15,14 +15,9 @@
  */
 
 import "./App.css";
-import PageCategorization from "./PageCategorization.jsx";
 
 function App() {
-  return (
-    <>
-      <PageCategorization />
-    </>
-  );
+  return <></>;
 }
 
 export default App;

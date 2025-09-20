@@ -140,7 +140,7 @@ function RouteMappingRulesComponent() {
                         aria-hidden="true"
                         className="mr-3 size-5 text-gray-400 group-data-focus:text-gray-500 dark:text-gray-500 dark:group-data-focus:text-white"
                       />
-                      Downlad rules
+                      Download rules
                     </button>
                   </MenuItem>
                 </div>
@@ -166,7 +166,7 @@ function RouteMappingRulesComponent() {
         {ruleKeys.length > 0 && (
           <div className="mt-8 flow-root">
             <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div className="sm: inline-block min-w-full px-6 py-2 align-middle lg:px-8">
+              <div className="min-w-full px-6 py-2 align-middle sm:inline-block lg:px-8">
                 <table className="relative min-w-full divide-y divide-gray-300 dark:divide-white/15">
                   <thead>
                     <tr>

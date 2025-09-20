@@ -52,7 +52,7 @@ export default function Notification({
           {/* Notification panel, dynamically insert this into the live region when it needs to be displayed */}
           <Transition
             show={showNotification}
-            className="transition ease-in-out data-closed:opacity-0 data-endter:duration-100 data-enter:data-closed:-translate-x-full data-leave:duration-300 data-leave:data-closed:translate-x-full"
+            className="transition ease-in-out data-closed:opacity-0 data-enter:duration-100 data-enter:data-closed:-translate-x-full data-leave:duration-300 data-leave:data-closed:translate-x-full"
           >
             <div className="pointer-events-auto w-full max-w-sm rounded-lg bg-white shadow-lg outline-1 outline-black/5 transition data-closed:opacity-0 data-enter:transform data-enter:duration-300 data-enter:ease-out data-closed:data-enter:translate-y-2 data-leave:duration-100 data-leave:ease-in data-closed:data-enter:sm:translate-x-2 data-closed:data-enter:sm:translate-y-0 dark:bg-gray-800 dark:-outline-offset-1 dark:outline-white/10">
               <div className="p-4">

@@ -168,7 +168,7 @@ export default function TransactionTable({
       {/* Transaction Table */}
       <div className="flow-root">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div className="sm: inline-block min-w-full px-6 align-middle lg:px-8">
+          <div className="min-w-full px-6 align-middle sm:inline-block lg:px-8">
             <table className="relative min-w-full divide-y divide-gray-300 dark:divide-white/15">
               <thead>
                 <tr>
