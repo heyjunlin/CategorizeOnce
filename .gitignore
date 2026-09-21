@@ -14,6 +14,9 @@ dist-ssr
 **/routeTree.gen.ts
 .vite/
 
+# Generated at build time from the copy in the repo root
+public/THIRD-PARTY-NOTICES.txt
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

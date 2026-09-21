@@ -67,8 +67,14 @@ async function generateAttributions() {
       }
     }
 
-    // Write to file
+    // Write to the repo root, which the README links to, and to public/, the
+    // only directory Vite copies into the build output. Without the second
+    // copy the <link rel="license"> in index.html points at nothing.
     await fs.writeFile("THIRD-PARTY-NOTICES.txt", attributions);
+    await fs.writeFile(
+      path.join("public", "THIRD-PARTY-NOTICES.txt"),
+      attributions,
+    );
     console.log(
       `Third-party attributions generated for ${productionDeps.length} packages!`,
     );
