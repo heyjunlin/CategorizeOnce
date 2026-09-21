@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+import process from "process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -69,7 +70,11 @@ async function processDirectory(dir) {
   }
 }
 
-// Start processing from the src directory
-processDirectory(path.join(__dirname, "src"))
+// Start processing from the src directory, which sits beside scripts/
+processDirectory(path.join(__dirname, "..", "src"))
   .then(() => console.log("License header addition completed!"))
-  .catch((err) => console.error("Error:", err));
+  .catch((err) => {
+    // A silent failure here means source files ship without their headers.
+    console.error("Error:", err);
+    process.exitCode = 1;
+  });

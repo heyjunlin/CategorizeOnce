@@ -14,13 +14,23 @@
  * limitations under the License.
  */
 
+import { Suspense, lazy } from "react";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 export const Route = createRootRoute({
   component: RootComponent,
 });
 import Nav from "../components/Nav";
 import SunsetBanner from "../components/SunsetBanner";
+
+// Kept out of production builds entirely: a static import would leave the
+// devtools stub in the bundle, which means shipping a devDependency.
+const Devtools = import.meta.env.PROD
+  ? () => null
+  : lazy(() =>
+      import("@tanstack/react-router-devtools").then((m) => ({
+        default: m.TanStackRouterDevtools,
+      })),
+    );
 
 function RootComponent() {
   return (
@@ -30,7 +40,9 @@ function RootComponent() {
         <Nav />
         <Outlet />
       </div>
-      <TanStackRouterDevtools />
+      <Suspense>
+        <Devtools />
+      </Suspense>
     </>
   );
 }
