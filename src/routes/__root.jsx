@@ -20,11 +20,13 @@ export const Route = createRootRoute({
   component: RootComponent,
 });
 import Nav from "../components/Nav";
+import SunsetBanner from "../components/SunsetBanner";
 
 function RootComponent() {
   return (
     <>
       <div className="min-h-full">
+        <SunsetBanner />
         <Nav />
         <Outlet />
       </div>

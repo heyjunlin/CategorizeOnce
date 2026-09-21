@@ -21,7 +21,10 @@ import "./index.css";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
-const router = createRouter({ routeTree });
+const router = createRouter({
+  routeTree,
+  basepath: import.meta.env.BASE_URL,
+});
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
